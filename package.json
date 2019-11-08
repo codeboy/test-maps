@@ -70,7 +70,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "PORT=5000 parcel index.html"
+    "start_test": "PORT=5000 parcel index.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --out-dir docs --public-url ./"
   },
   "author": "zzzz",
   "license": "ISC",
