@@ -25,3 +25,4 @@ apps/core/__pycache__/
 apps/core/migrations/__pycache__/
 apps/core/templatetags/__pycache__/
 apps/frontend/__pycache__/
+/package-lock.json
