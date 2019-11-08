@@ -163,52 +163,13 @@ function info(i) {
 
 
 
+const express = require('express');
+const path = require('path');
+const PORT = process.env.PORT || 5000;
 
-//
-// // Layers
-// var layers = [new ol.layer.Tile({source: new ol.source.OSM()})];
-//
-// // The map
-// var map = new ol.Map({
-//   target: 'map',
-//   view: new ol.View({
-//     zoom: 17,
-//     center: [269766, 6248649]
-//   }),
-//   controls: ol.control.defaults({"attribution": false}),
-//   layers: layers
-// });
-//
-// // New vector layer
-// var vector = new ol.layer.Vector({
-//   name: 'Vecteur',
-//   source: new ol.source.Vector({features: new ol.Collection()}),
-// })
-// map.addLayer(vector);
-//
-// var drawi = new ol.interaction.Draw({
-//   source: vector.getSource(),
-//   //type: "LineString"
-//   type: "Polygon"
-// });
-// map.addInteraction(drawi);
-//
-// var modi = new ol.interaction.Modify({source: vector.getSource()});
-// map.addInteraction(modi);
-//
-// var snapi = new ol.interaction.SnapGuides();
-// snapi.setDrawInteraction(drawi);
-// snapi.setModifyInteraction(modi);
-// map.addInteraction(snapi);
-//
-// // New guide on meridian (default Greenwich)
-// function addMeridian(x) {
-//   var p1 = ol.proj.transform([x || 0, 1], 'EPSG:4326', map.getView().getProjection());
-//   var p2 = ol.proj.transform([x || 0, -1], 'EPSG:4326', map.getView().getProjection());
-//   snapi.addGuide([p1, p2]);
-// };
-//
-// // Switch initial condition
-// function setInitial(b) {
-//   snapi.enableInitialGuides_ = b;
-// };
+express()
+  .use(express.static(path.join(__dirname, 'public')))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'ejs')
+  .get('/', (req, res) => res.render('pages/index'))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`));
