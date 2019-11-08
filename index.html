@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Draw and Modify Features</title>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+
+  <!-- ol-ext -->
+  <link rel="stylesheet" href="./node_modules/ol-ext/dist/ol-ext.css" />
+
+  <style>
+    .map {
+      width: 100%;
+      /*width: 600px;*/
+      height:500px;
+    }
+
+    .ol-button i {
+      color: inherit;
+    }
+
+    .hello {
+      right: 50%;
+      top: 0.5em;
+    }
+
+    .save {
+      left: 50%;
+      top: 0.5em;
+    }
+
+    .text {
+      left: 50%;
+      top: 2.5em;
+    }
+
+    .ol-button i {
+      color: inherit;
+    }
+
+    .ol-button.red button,
+    .ol-button.green button,
+    .ol-button.blue button {
+      color: #f00;
+      background-color: currentColor;
+      border: 2px solid currentColor;
+      width: 1em;
+      height: 1em;
+      border-radius: 0;
+    }
+
+    .ol-button.green button {
+      color: #0f0;
+    }
+
+    .ol-button.blue button {
+      color: #00f;
+    }
+
+    .ol-button.red button:hover,
+    .ol-button.green button:hover,
+    .ol-button.blue button:hover {
+      background-color: currentColor !important;
+      border-color: #000;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h3>dsadasd sadasd</h3>
+  <div id="map" class="map"></div>
+  <div class="options" >
+    Info:<br/>
+    <textarea id="info" style="width:28em; height:10em"></textarea>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
