@@ -70,7 +70,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "PORT=3006 parcel index.html"
   },
   "author": "zzzz",
   "license": "ISC",
