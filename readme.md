@@ -1,9 +1,24 @@
-## Тестовое задание
-Для запуска и корректной работы необходим npm (Node.js)
+# vue-prj
 
-Далее `npm start` и поставить зависимости, основные это
+## Project setup
+```
+npm install
+```
 
-* ol
-* ol-ext
-* parcel
-Всё есть в `package.json` 
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

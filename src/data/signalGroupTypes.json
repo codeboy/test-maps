@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "type": "traffic",
+    "description": "транспортный"
+  },
+  {
+    "id": 2,
+    "type": "pedestrian",
+    "description": "пешеходый"
+  },
+  {
+    "id": 3,
+    "type": "arrow",
+    "description": "стрелка"
+  }
+]

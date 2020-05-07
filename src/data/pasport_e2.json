@@ -1,0 +1,87 @@
+{
+  "case_number": 783,
+  "revision_number": 2,
+  "revision_description": "Изменено расположение светофорных колонок А и L",
+  "road_controller": {
+    "type": "КДП-60К",
+    "firmware": "1.0",
+    "ip": "127.0.0.1",
+    "shape": {
+      "file": "rc.svg",
+      "position": [
+        37.58657,
+        55.8979
+      ],
+      "angle": 0,
+      "caption": {
+        "position": [
+          37.58654,
+          55.89783
+        ],
+        "angle": 270
+      }
+    },
+    "signal_groups": [
+      {
+        "id": 1,
+        "type": "traffic",
+        "add_green": 0,
+        "green_blink": 3,
+        "yellow": 3,
+        "add_red": 0,
+        "red_yellow": 1,
+        "add_green2": 0,
+        "tl_list": [
+          6,
+          8,
+          31
+        ],
+        "trajectory": {
+          "geometries": [
+            [
+              [
+                37.5869,
+                55.89891
+              ],
+              [
+                37.58689,
+                55.89834
+              ]
+            ]
+          ],
+          "caption": {
+            "position": [
+              37.58691,
+              55.89896
+            ],
+            "angle": 0
+          }
+        }
+      },
+      {
+        "id": 2,
+        "type": "traffic",
+        "green_blink": 3,
+        "yellow": 3,
+        "add_red": 2,
+        "tl_list": [
+          9,
+          32,
+          34,
+          41
+        ]
+      },
+      {
+        "id": 3,
+        "type": "traffic",
+        "green_blink": 3,
+        "yellow": 3,
+        "tl_list": [
+          35,
+          37,
+          40
+        ]
+      }
+    ]
+  }
+}

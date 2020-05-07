@@ -1,0 +1,28 @@
+[
+  {
+    "position": { "lat":55.768510589665425,"lng":37.61693000793458 },
+    "visible": true,
+    "draggable": true,
+    "tooltip" : "Test tooltip",
+    "iconName": "call_made",
+    "iconSize": "42px"
+  },
+  {
+    "position": { "lat":55.76735178017714,"lng":37.59942054748536 },
+    "visible": true,
+    "draggable": true,
+    "iconName": "call_merge",
+    "iconSize": "42px",
+    "iconColor": "teal"
+  },
+  {
+    "position": { "lat":55.76267368264763,"lng":37.60308944702149 },
+    "visible": true,
+    "draggable": true,
+    "iconName": "comment",
+    "iconSize": "32px",
+    "iconColor": "orange"
+  },
+  { "position": { "lat":55.77377308264063,"lng":37.60808944702123 } },
+  { "position": { "lat":55.7659515060885,"lng":37.63486862182618 } }
+]

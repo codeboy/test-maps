@@ -1,0 +1,26 @@
+[
+  {
+    "position": { "lat":55.75730732168019,"lng":37.61607170104981 },
+    "visible": true,
+    "draggable": true,
+    "tooltip" : "Test tooltip",
+    "iconSize": "42px",
+    "iconName": "assistant"
+  },
+  {
+    "position": { "lat":55.75867368264763,"lng":37.61808944702149 },
+    "visible": true,
+    "draggable": true,
+    "iconName": "o_call_split",
+    "iconSize": "2.6em",
+    "iconColor": "red"
+  },
+  {
+    "position": { "lat":55.762861068058975,"lng":37.632036209106450 },
+    "visible": true,
+    "draggable": true,
+    "iconName": "o_outlined_flag",
+    "iconSize": "42px",
+    "iconColor": "purple"
+  }
+]
